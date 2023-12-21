@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@<%= projectName %>/core/*": ["./packages/core/src/*"],
+      "@<%= projectName %>/db": ["./packages/database/src/index.ts"],
+      "@<%= projectName %>/db/*": ["./packages/database/src/*"],
+      "@<%= projectName %>/globals/*": ["./packages/globals/src/*"]
+    }
+  },
+}

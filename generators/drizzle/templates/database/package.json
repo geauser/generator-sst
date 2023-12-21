@@ -1,0 +1,19 @@
+{
+  "name": "@<%= projectName %>/db",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "db:migrate": "sst bind tsx ./src/migrate.ts",
+    "db:generate": "drizzle-kit generate:mysql",
+    "db:push": "./scripts/drizzle:push.sh"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.20.6"
+  },
+  "dependencies": {
+    "@planetscale/database": "^1.11.0",
+    "drizzle-orm": "^0.29.1",
+    "mysql2": "^3.6.5"
+  }
+}

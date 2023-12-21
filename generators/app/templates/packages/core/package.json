@@ -1,0 +1,21 @@
+{
+  "name": "@<%= projectName %>/core",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^20.10.1",
+    "sst": "^2.36.7",
+    "vitest": "^0.34.6"
+  },
+  "dependencies": {
+    "@axiomhq/winston": "^1.0.0-rc.1",
+    "chalk": "^5.3.0",
+    "lodash": "^4.17.21",
+    "winston": "^3.11.0"
+  }
+}
