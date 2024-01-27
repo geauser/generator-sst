@@ -1,11 +1,3 @@
 {
-  "extends": "@tsconfig/node18/tsconfig.json",
-  "compilerOptions": {
-    "module": "esnext",
-    "moduleResolution": "node",
-    "baseUrl": ".",
-    "paths": {
-      "@<%= projectName %>/core/*": ["../core/src/*"]
-    }
-  }
+  "extends": "../../tsconfig.extend.json",
 }
