@@ -13,6 +13,4 @@ fi
 # Open a new terminal window with a tab for the SST dev process, one
 # for nuxt dev process and one for the firebase emulator.
 yarn ttab -w 'clear; yarn dev'
-yarn ttab 'clear; yarn firebase'
-yarn ttab 'clear; yarn workspace @chatsum/app dev'
-yarn ttab 'clear; source .env.local; stripe listen --forward-to "$NUXT_API_URL/stripe/webhook"'
+yarn ttab 'clear; yarn workspace @<%= projectName %>/app dev'
